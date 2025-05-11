@@ -28,7 +28,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
+          PYTHONPATH=. pytest
 
       - name: Check Python files list
         run: find . -name "*.py" -exec file {} \;
